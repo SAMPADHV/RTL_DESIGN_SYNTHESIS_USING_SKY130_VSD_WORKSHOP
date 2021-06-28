@@ -12,6 +12,16 @@ Day 1:
 * Delay, Power, Area Relations wrt Design
 
 Day 2:
+
+* PVT characteristics
+* LIB file details
+* Hierarchial and Flatten Synthesis
+* Submodule level synthesis
+* Why Flipflops
+* Asynchronous and Synchronous Flops
+* special cases
+
+
 Day 3:
 Day 4:
 Day 5:
@@ -20,7 +30,7 @@ Day 5:
 * Started with Defining Simulator,Design,Testbench
 
 Working of Simulator:
-Simulator checks for any change in the input ouput is evaluated
+Simulator checks for any change in the input and ouput is evaluated
 
 stimulus_Generator >>>>  Design  >>>>>> Stimulus Observer
 * Flow:
@@ -130,6 +140,46 @@ With attribute : will be filtered one with specific connection details
 
 # DAY 2
 
+Some of the  useful vim commands
+
+* gvim ..... address  :- To open a vim editor
+* "i" To insert
+* :syn off To remove highlight of syntax
+* :se hls < enter> /<name> :- To search in vim
+* :se num :- To Enable line no
+* :vsp :- vertical split of vim
+* :sp :- horizontal split
+* -o helps us to open two or more files at once
+  
+PVT Conditions
+  
+  Process Variations: variations which are due to fabrication 
+  Voltage Variations: variation wrt change in voltage
+  Temperature Variations: Semiconductors are sensitive to temperature.
+ 
+  These together characterise the chip. While designing chips all these variations have to be kept in mind
+  These details are present in the LIB files
+  LIB Files:
+  * They have details of units used in files
+  * operating conditions 
+  * standard cells
+  * Delay model used
+  * Delay and Power Details of all posssible input conditions
+  
+ Synthesis:
+  Hierarchial Synthesis : Synthesis will have netlist in terms of submodules.
+  Flat Synthesis : Synthesis will be done in terms of gates.
+  
+ Submodule Synthesis:
+  Submodule level synthesis can also be done wrt individual modules
+  advantages:
+  * When you have multiple modules of same instances you can verify synthesis of one and can instantiate others wrt requirement
+  * We can easily divide the work in larger design and complete the work
+  
+ Why Flop:
+  When we have a combinational circuit we will always have a glitch due to difference in propagation delay at inputs.
+  
+  With multiple combinational circuits output might never settle down ,so be used to store data. 
 
 
 
