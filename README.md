@@ -437,18 +437,149 @@ Some Special cases:
   * To check if the timing of design is met
   
    netlist (.v) file + tb + gate_level_verilog_model <<< iverilog <<< vcd file which is further observed
+ 
+ gate_level_veriog_models are of two types:
+ 
+ Timing aware : which has both fuctionality and timimg details
+ Functional : This only has details of functionality only functional velidation can be done
   
   RTL file will not be having details in terms of standard cell so earlier thier was no need of gate_level_verilog_model to verify but now we are verifying the netlist which has the code in terms of standard cells. So now we had to add a referance file , so that iverilog gets the  referance file for these standard cells.
   
   (((HERE IN THIS WORKSHOP WE HAVEN'T CONSIDERED TIMING AWARE MODELS)))
   
-  * Synthesis simulation mismatch:
-  
-  
-  
-  
-  
-  * 
+ one might think when the netlist created is of rtl itself then why there would be a difference in functionality. What are the possible mismatches, they are due to 
+ * Missing Ssensitivity list
+ * Difference in blocking and non blocking assignment
+ * Non standard verilog coading style
+ 
+![image](https://user-images.githubusercontent.com/69497292/123614250-c70d7380-d821-11eb-8da5-b46dd3de44ab.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614319-d8ef1680-d821-11eb-9cf7-07a0d1661b10.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614371-e5736f00-d821-11eb-9713-8e97d57c6b22.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614456-f7551200-d821-11eb-80ac-1e0385673424.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614502-08058800-d822-11eb-8a3e-0e1d3c3f20d8.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614546-13f14a00-d822-11eb-9ed4-101d810e636f.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614650-27041a00-d822-11eb-92c3-ab5665b33102.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614747-3c794400-d822-11eb-8509-42e91d6f4c16.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123614821-4ef37d80-d822-11eb-8229-e2f6c4e4df7f.png)
+ 
+![image](https://user-images.githubusercontent.com/69497292/123614987-7d715880-d822-11eb-9e13-c523dd31144f.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123615146-a7c31600-d822-11eb-8553-8326da451e51.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615207-b4e00500-d822-11eb-9527-3b157d9314fa.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615282-c4f7e480-d822-11eb-8240-6cc1c5212f6f.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615355-d80ab480-d822-11eb-9e57-eb1dda6d1091.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615406-e658d080-d822-11eb-887b-4a2a5f98021d.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123615484-fa043700-d822-11eb-85e0-954e532d3c95.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615748-39cb1e80-d823-11eb-8977-f6453272aa35.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615847-50717580-d823-11eb-9a99-fc9f99c13af5.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615907-5c5d3780-d823-11eb-890e-e12e920d0759.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123615941-6717cc80-d823-11eb-8751-4bb25e347bdb.png)
+
+ ## DAY 5
+ 
+ IF : Priority logic 
+ if "if" condition is true it wont check front will come out of the loop
+ 
+ case: It starts execution sequentially even if conditions are met, it will come out of the loop only after comparing all possible cases
+ 
+ Caveats  with if:
+ "If" can cause infered latches: Even if you dont intend to put latch. But because of bad coading style we get a latch:
+ 
+ Some times we use this coading style also as our requirement. In comnbinational logic i should not have infered logic but sequential logic can have the latch according to requirement. But this should be a known thing, not to occur unknowingly
+
+ Caveats with case:
+ 
+ * Incomplete case will lead to inferred latches
+ -  coading with default will avoid inferred latches
+ * Partial assignment in case will also lead to inferred latches
+ -  Even if we have default this will not resolve
+ -  This can be resoved by assigning all the outputs in all the segment of case.
+ * overlapping cases
+ -  overlapping cases may result in unpredictable output it won't form latch
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621253-a399f700-d828-11eb-96e0-bd9525edd35d.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621294-ae548c00-d828-11eb-8d94-c7ed4ffdc402.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123621368-c0362f00-d828-11eb-9917-b1482010b737.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621435-d17f3b80-d828-11eb-86f6-c5b9f1ac278f.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123621485-e0fe8480-d828-11eb-95ac-9149b79bcb41.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621534-f1166400-d828-11eb-9e00-0645b8d3d30c.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621601-04c1ca80-d829-11eb-84cb-8953527e8c52.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123621678-1905c780-d829-11eb-9388-a8007c90c0c6.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123621829-3fc3fe00-d829-11eb-87d7-8b70dbb06d26.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622179-929db580-d829-11eb-8e69-ec04594c6691.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622331-b9f48280-d829-11eb-898e-8abbca48e9b4.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622453-d98bab00-d829-11eb-8343-6bf946db7f6c.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123622591-05a72c00-d82a-11eb-8a43-3d3d6fa92cd8.png)
+
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123622659-21123700-d82a-11eb-96ab-ba8fc35a94d4.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622795-5028a880-d82a-11eb-81f1-279cf2dd4dd4.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622874-69c9f000-d82a-11eb-8369-080660695324.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123622916-78b0a280-d82a-11eb-89e5-60026a63bf3c.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123622971-8b2adc00-d82a-11eb-9028-0256e7d1e8d9.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123623657-59fedb80-d82b-11eb-8a44-5851cbf2a710.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123623722-6b47e800-d82b-11eb-86d9-d114d73a5667.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123623819-84e92f80-d82b-11eb-9213-5b71771800ac.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123623910-9af6f000-d82b-11eb-9f83-4842c6781969.png)
+
+ * Using looping constructs for hardware
+ - For
+ - Generate
+ 
+ For : 
+ * Is used inside always block.
+ * Used to evaluate expression.
+ * Finally using "for" inside always block will also lead to hardware. 
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
 
   
 
