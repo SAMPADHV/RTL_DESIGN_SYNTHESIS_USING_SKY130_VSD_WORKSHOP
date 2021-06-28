@@ -51,12 +51,15 @@ Day 5:
   * Looping constructs
   
 ## Day 1:
+
 * Started with Defining Simulator,Design,Testbench
 
 Working of Simulator:
+
 Simulator checks for any change in the input and ouput is evaluated
 
 stimulus_Generator >>>>  Design  >>>>>> Stimulus Observer
+
 * Flow:
 
 ![image](https://user-images.githubusercontent.com/69497292/123119160-e773b180-d460-11eb-8425-b85f579dbb62.png)
@@ -102,9 +105,11 @@ LIB:
 Lib file contains the details of all the standard cell available. Their are different types of cells
 
 1. Fast cells: These are used to  reduce Propagation Delay. With decrease in Pd We can have high frequency operation
+
 2. Slow cells: They increase the Delay. These are essential to remove hold violations
 
 High Speed : More Width : Increase in area : High current : High Power Dissipiation
+
 Low Speed  : Lesser Width : lesser area: Less Current : lesser  Power Dissipiation
 
 Below are the commands and their resuls of synthesis:
@@ -138,7 +143,7 @@ location path should be corrctly provided
 ![image](https://user-images.githubusercontent.com/69497292/123134476-71764700-d46e-11eb-9ce9-40d6d8374658.png)
 
 6. Netlist Pictorial rep:
-7. 
+
 ![image](https://user-images.githubusercontent.com/69497292/123135139-142ec580-d46f-11eb-982b-4d303b2c4d53.png)
 
 ![image](https://user-images.githubusercontent.com/69497292/123134988-f3ff0680-d46e-11eb-87f5-2c9446973b34.png)
@@ -150,6 +155,7 @@ without attribute: Will have some additional / Extra details
 ![image](https://user-images.githubusercontent.com/69497292/123135943-0463b100-d470-11eb-9004-6184ba6bf562.png)
 
 Netlist :
+
 ![image](https://user-images.githubusercontent.com/69497292/123136053-21987f80-d470-11eb-8417-c0d2fc9ead6b.png)
 
 ![image](https://user-images.githubusercontent.com/69497292/123137274-6cff5d80-d471-11eb-857b-372cca8757bc.png)
@@ -177,13 +183,17 @@ Some of the  useful vim commands
   
 PVT Conditions
   
-  Process Variations: variations which are due to fabrication 
-  Voltage Variations: variation wrt change in voltage
-  Temperature Variations: Semiconductors are sensitive to temperature.
+ Process Variations: variations which are due to fabrication 
+  
+ Voltage Variations: variation wrt change in voltage
+
+ Temperature Variations: Semiconductors are sensitive to temperature.
  
-  These together characterise the chip. While designing chips all these variations have to be kept in mind
-  These details are present in the LIB files
-  LIB Files:
+ These together characterise the chip. While designing chips all these variations have to be kept in mind
+ 
+ These details are present in the LIB files
+ 
+ LIB Files:
   * They have details of units used in files
   * operating conditions 
   * standard cells
@@ -191,19 +201,24 @@ PVT Conditions
   * Delay and Power Details of all posssible input conditions
   
  Synthesis:
+ 
   Hierarchial Synthesis : Synthesis will have netlist in terms of submodules.
+ 
   Flat Synthesis : Synthesis will be done in terms of gates.
   
  Submodule Synthesis:
+  
   Submodule level synthesis can also be done wrt individual modules
-  advantages:
+  
+ advantages:
   * When you have multiple modules of same instances you can verify synthesis of one and can instantiate others wrt requirement
   * We can easily divide the work in larger design and complete the work
   
  Why Flop:
-  When we have a combinational circuit we will always have a glitch due to difference in propagation delay at inputs.
+ 
+ When we have a combinational circuit we will always have a glitch due to difference in propagation delay at inputs.
   
-  With multiple combinational circuits output might never settle down ,so flops are used to store data and it prevents propagation of glitches 
+ With multiple combinational circuits output might never settle down ,so flops are used to store data and it prevents propagation of glitches 
   
  Synchronous and Asynchronous Circuit:
  
@@ -213,16 +228,19 @@ PVT Conditions
   
   
 Some Special cases:
-  Some optimization techniques synthesis tool takes:
+ 
+ Some optimization techniques synthesis tool takes:
   
   * Multiplying with powers of 2:
-  Here we expect multiplier circuit in netlist but we don't get any hardware for doing things. 
+ 
+ Here we expect multiplier circuit in netlist but we don't get any hardware for doing things. 
   a*2 ={a,0}
   
   Snapshots of the work :
   
   * lib file 
-  ![image](https://user-images.githubusercontent.com/69497292/123581282-30c55780-d7f9-11eb-923b-88ee49de66b5.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123581282-30c55780-d7f9-11eb-923b-88ee49de66b5.png)
 
   ![image](https://user-images.githubusercontent.com/69497292/123581467-9ca7c000-d7f9-11eb-87b9-487d76ee679c.png)
 
@@ -260,12 +278,14 @@ Some Special cases:
 ![image](https://user-images.githubusercontent.com/69497292/123587341-c6fe7b00-d803-11eb-940e-f118595179ae.png)
 
  ![image](https://user-images.githubusercontent.com/69497292/123587412-dda4d200-d803-11eb-8dbe-99cb655f6753.png)
-![image](https://user-images.githubusercontent.com/69497292/123587505-0331db80-d804-11eb-83a6-55317d5f0d55.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123587505-0331db80-d804-11eb-83a6-55317d5f0d55.png)
 
   ![image](https://user-images.githubusercontent.com/69497292/123587620-278db800-d804-11eb-92ba-dffcdc295774.png)
   
   * Sub Modules
-  ![image](https://user-images.githubusercontent.com/69497292/123590582-72a9ca00-d808-11eb-92a2-48f371f6f1ad.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123590582-72a9ca00-d808-11eb-92a2-48f371f6f1ad.png)
 
   ![image](https://user-images.githubusercontent.com/69497292/123590594-763d5100-d808-11eb-99fd-3b7e6c892a36.png)
 
@@ -308,10 +328,10 @@ Some Special cases:
   ![image](https://user-images.githubusercontent.com/69497292/123588889-12b22400-d806-11eb-8734-b1561664d398.png)
 
   ![image](https://user-images.githubusercontent.com/69497292/123589025-3ffed200-d806-11eb-9931-918c3cc2d390.png)
-  ![image](https://user-images.githubusercontent.com/69497292/123590276-1050c980-d808-11eb-904c-fd500bca0e33.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123590276-1050c980-d808-11eb-904c-fd500bca0e33.png)
 
   ![image](https://user-images.githubusercontent.com/69497292/123590313-1b0b5e80-d808-11eb-851b-53af06504003.png)
-
 
   ![image](https://user-images.githubusercontent.com/69497292/123589496-f19e0300-d806-11eb-895a-f6d7abfd8a0d.png)
 
@@ -347,9 +367,11 @@ Some Special cases:
   
   Constant optimization:
   
-  Here we optimize the design to get optimised area and power
-  Examples can be seen in below screenshots
-  command used: opt_claen -purge 
+ Here we optimize the design to get optimised area and power
+ 
+ Examples can be seen in below screenshots
+ 
+ command used: opt_claen -purge 
   
   Boolean logic Optimization 
   
@@ -362,14 +384,16 @@ Some Special cases:
   some times the code written is such that it represents flipflop logic but the output wont depend on the flop input then the flip flop will not be considered in symthesis
   
   Advanced:
-  State optimization: This includes optimization of unused states
+ 
+ State optimization: This includes optimization of unused states
   
-  cloning : This technique is used when we do physical aware synthesis
-  
-  Retiming: This involves  shifting of combinational logic to next flop or previous flops keeping in mind a slack at flops. 
+ cloning : This technique is used when we do physical aware synthesis
+ 
+ Retiming: This involves  shifting of combinational logic to next flop or previous flops keeping in mind a slack at flops. 
   
   * Combinational optimization :
-  before optimizing
+ 
+ before optimizing
   
   ![image](https://user-images.githubusercontent.com/69497292/123596439-d1bf0d00-d80f-11eb-8d72-0248d070fa1e.png)
 
@@ -441,6 +465,7 @@ Some Special cases:
  gate_level_veriog_models are of two types:
  
  Timing aware : which has both fuctionality and timimg details
+ 
  Functional : This only has details of functionality only functional velidation can be done
   
   RTL file will not be having details in terms of standard cell so earlier thier was no need of gate_level_verilog_model to verify but now we are verifying the netlist which has the code in terms of standard cells. So now we had to add a referance file , so that iverilog gets the  referance file for these standard cells.
@@ -448,6 +473,7 @@ Some Special cases:
   (((HERE IN THIS WORKSHOP WE HAVEN'T CONSIDERED TIMING AWARE MODELS)))
   
  one might think when the netlist created is of rtl itself then why there would be a difference in functionality. What are the possible mismatches, they are due to 
+ 
  * Missing Ssensitivity list
  * Difference in blocking and non blocking assignment
  * Non standard verilog coading style
@@ -494,12 +520,15 @@ Some Special cases:
 
  ## DAY 5
  
- IF : Priority logic 
+ 
+IF : Priority logic 
+
  if "if" condition is true it wont check front will come out of the loop
  
  case: It starts execution sequentially even if conditions are met, it will come out of the loop only after comparing all possible cases
  
  Caveats  with if:
+ 
  "If" can cause infered latches: Even if you dont intend to put latch. But because of bad coading style we get a latch:
  
  Some times we use this coading style also as our requirement. In comnbinational logic i should not have infered logic but sequential logic can have the latch according to requirement. But this should be a known thing, not to occur unknowingly
@@ -507,11 +536,17 @@ Some Special cases:
  Caveats with case:
  
  * Incomplete case will lead to inferred latches
+ 
  -  coading with default will avoid inferred latches
+ 
  * Partial assignment in case will also lead to inferred latches
+ 
  -  Even if we have default this will not resolve
+ 
  -  This can be resoved by assigning all the outputs in all the segment of case.
+ 
  * overlapping cases
+ 
  -  overlapping cases may result in unpredictable output it won't form latch
 
  ![image](https://user-images.githubusercontent.com/69497292/123621253-a399f700-d828-11eb-96e0-bd9525edd35d.png)
@@ -560,7 +595,9 @@ Some Special cases:
  ![image](https://user-images.githubusercontent.com/69497292/123623910-9af6f000-d82b-11eb-9f83-4842c6781969.png)
 
  * Using looping constructs for hardware
+ 
  - For
+ 
  - Generate
  
  For : 
