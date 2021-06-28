@@ -179,7 +179,53 @@ PVT Conditions
  Why Flop:
   When we have a combinational circuit we will always have a glitch due to difference in propagation delay at inputs.
   
-  With multiple combinational circuits output might never settle down ,so be used to store data. 
+  With multiple combinational circuits output might never settle down ,so flops are used to store data and it prevents propagation of glitches 
+  
+ Synchronous and Asynchronous Circuit:
+ 
+ Synchronous Circuits: Circuits whose outputs changes only wrt clocks posedge or negedge.
+ 
+ Asynchronous Circuits: Circuits which have set/reset/both in sensitivity list along with clocks.
+  
+  
+Some Special cases:
+  Some optimization techniques synthesis tool takes:
+  
+  * Multiplying with powers of 2:
+  Here we expect multiplier circuit in netlist but we don't get any hardware for doing things. 
+  a*2 ={a,0}
+  
+  Snapshots of the work :
+  
+  * lib file 
+  ![image](https://user-images.githubusercontent.com/69497292/123581282-30c55780-d7f9-11eb-923b-88ee49de66b5.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581467-9ca7c000-d7f9-11eb-87b9-487d76ee679c.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581493-a7625500-d7f9-11eb-9729-f21cfaf292bd.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581528-bf39d900-d7f9-11eb-9c28-d148cc93fde2.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581580-d5479980-d7f9-11eb-851f-fdcbb7c78af3.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581631-f01a0e00-d7f9-11eb-9095-af278bb3ac46.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123581689-0758fb80-d7fa-11eb-8950-a76620c121c3.png)
+  
+![image](https://user-images.githubusercontent.com/69497292/123581763-33747c80-d7fa-11eb-8ae0-c382fb00ea60.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123581824-4be49700-d7fa-11eb-9ea5-79c8e3671434.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123582406-60755f00-d7fb-11eb-85ea-e3bba37cb84e.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123583966-2d809a80-d7fe-11eb-8109-409099ce4d7b.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123584034-4b4dff80-d7fe-11eb-9ea1-94b41af9a3e0.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123584152-7df7f800-d7fe-11eb-92b7-c9a77cba2649.png)
+
+  Multiple Modules:
+  
 
 
 
