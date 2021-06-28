@@ -23,9 +23,33 @@ Day 2:
 
 
 Day 3:
+
+* Combinational logic Optimization
+  * Constant Propagation
+  * Boolean logic Optimization
+* Sequential logic Optimization
+  * Basic
+    Sequential Constant propagation
+  * Advance
+    State Optimization
+    Retiming
+    Sequential logic cloning
+  
+
 Day 4:
+
+  * Gate level Simulation
+  * Synthesis simulatiion mismatch
+  * Missing Sensitivity list 
+  * Blocking and NonBlocking statements
+  * Caviates with Blocking statements
+  
 Day 5:
 
+  * Infered latches
+  * if , case caviates
+  * Looping constructs
+  
 ## Day 1:
 * Started with Defining Simulator,Design,Testbench
 
@@ -138,7 +162,7 @@ With attribute : will be filtered one with specific connection details
 
 
 
-# DAY 2
+## DAY 2
 
 Some of the  useful vim commands
 
@@ -224,13 +248,215 @@ Some Special cases:
 
   ![image](https://user-images.githubusercontent.com/69497292/123584152-7df7f800-d7fe-11eb-92b7-c9a77cba2649.png)
 
-  Multiple Modules:
+  * Multiple Modules:
+  
+![image](https://user-images.githubusercontent.com/69497292/123584383-e6df7000-d7fe-11eb-8e64-592fb50c39ff.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123584633-5a817d00-d7ff-11eb-876f-c75979012bbb.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123584878-c49a2200-d7ff-11eb-9c3e-503d36fcf082.png)
+
+ 
+![image](https://user-images.githubusercontent.com/69497292/123587341-c6fe7b00-d803-11eb-940e-f118595179ae.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123587412-dda4d200-d803-11eb-8dbe-99cb655f6753.png)
+![image](https://user-images.githubusercontent.com/69497292/123587505-0331db80-d804-11eb-83a6-55317d5f0d55.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123587620-278db800-d804-11eb-92ba-dffcdc295774.png)
+  
+  * Sub Modules
+  ![image](https://user-images.githubusercontent.com/69497292/123590582-72a9ca00-d808-11eb-92a2-48f371f6f1ad.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590594-763d5100-d808-11eb-99fd-3b7e6c892a36.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123590679-94a34c80-d808-11eb-875b-e7fdb24b174a.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590752-b1d81b00-d808-11eb-9304-fd4c8dd8b97a.png)
+
+
+
+  * Hierarchial level synthesis
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123587711-4d1ac180-d804-11eb-8fac-79e6c5643a41.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123587777-66237280-d804-11eb-855c-89baaa1cdfe5.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123587813-74718e80-d804-11eb-8513-f646393b1b39.png)
+
+  * Flattening:
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123587862-87845e80-d804-11eb-9380-af2e4e58b364.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123587885-91a65d00-d804-11eb-8515-10f067c44345.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123587954-aa167780-d804-11eb-98eb-72d4a7d2f60f.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123587970-b3074900-d804-11eb-9820-1a5ff432d115.png)
+
+  * Synchronous and Asynchronous Flipflops
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123588124-eea21300-d804-11eb-9232-cf8826cfe79c.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123588182-037ea680-d805-11eb-9c9f-953e756f42c3.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123588233-14c7b300-d805-11eb-8fd5-efe2f963de45.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123588285-290bb000-d805-11eb-94f4-45cfb91d2634.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123588805-f6ae8280-d805-11eb-8054-29b622f76f24.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123588889-12b22400-d806-11eb-8734-b1561664d398.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123589025-3ffed200-d806-11eb-9931-918c3cc2d390.png)
+  ![image](https://user-images.githubusercontent.com/69497292/123590276-1050c980-d808-11eb-904c-fd500bca0e33.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590313-1b0b5e80-d808-11eb-851b-53af06504003.png)
+
+
+  ![image](https://user-images.githubusercontent.com/69497292/123589496-f19e0300-d806-11eb-895a-f6d7abfd8a0d.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123589537-fe225b80-d806-11eb-8f29-af5be5368de2.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123590000-ae905f80-d807-11eb-99d4-0c52f525cd7e.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590030-b7813100-d807-11eb-8042-a4a43ae4cf1e.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590066-c667e380-d807-11eb-94d5-4d0708b73ea0.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590107-d2ec3c00-d807-11eb-8b33-7115e6c29739.png)
+
+  *special cases
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123590848-ddf39c00-d808-11eb-80b8-d06efbe59ced.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590874-ea77f480-d808-11eb-9e43-6b838da12912.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123590956-08ddf000-d809-11eb-9d39-f12f4c147af6.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123591265-607c5b80-d809-11eb-8e07-cc932d2b85dc.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123591347-7722b280-d809-11eb-89a9-00e20a020409.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123591408-8e61a000-d809-11eb-8c7e-c221eb52da22.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123591590-cff24b00-d809-11eb-8db0-a16597cbcab3.png)
+  
+## DAY 3
+  
+  * Combinationl Logic Optimization
+  
+  Constant optimization:
+  
+  Here we optimize the design to get optimised area and power
+  Examples can be seen in below screenshots
+  command used: opt_claen -purge 
+  
+  Boolean logic Optimization 
+  
+  Expressions are solved and simplified equation is obtained. This is similar to kmap optimization but done without kmap implementation.
+  
+  * Sequential logic Optimization
+  
+  Basic : Sequential Constant Propagation
+  
+  some times the code written is such that it represents flipflop logic but the output wont depend on the flop input then the flip flop will not be considered in symthesis
+  
+  Advanced:
+  State optimization: This includes optimization of unused states
+  
+  cloning : This technique is used when we do physical aware synthesis
+  
+  Retiming: This involves  shifting of combinational logic to next flop or previous flops keeping in mind a slack at flops. 
+  
+  * Combinational optimization :
+  before optimizing
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123596439-d1bf0d00-d80f-11eb-8d72-0248d070fa1e.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123596491-e1d6ec80-d80f-11eb-9f8c-c53728a73b08.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123596717-25315b00-d810-11eb-960c-3dccec2d716b.png)
+
+  after optimizing
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123596545-f4512600-d80f-11eb-85f9-d43237026eb0.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123596771-34180d80-d810-11eb-91bc-50674d008702.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123596890-56119000-d810-11eb-9c16-8381bb7a27c7.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123597046-793c3f80-d810-11eb-8473-7a07b3f573a8.png)
+
+  * Sequential Optimization
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123597620-2fa02480-d811-11eb-975e-0f535108479c.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123597659-3d55aa00-d811-11eb-9aa5-5dba51574e8c.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123597717-4f374d00-d811-11eb-9b43-83f032c8997b.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123597841-768e1a00-d811-11eb-832d-4d31158e0454.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123597877-8279dc00-d811-11eb-8afd-edf5bbeb973a.png)
+ 
+![image](https://user-images.githubusercontent.com/69497292/123598426-21063d00-d812-11eb-8de9-72dc52712db4.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598436-25325a80-d812-11eb-9e34-9e8e74c1372e.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598485-34b1a380-d812-11eb-908d-c6ed32589ffd.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598525-3f6c3880-d812-11eb-80bb-6732cef1ad64.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123598688-64f94200-d812-11eb-99eb-2e9ed9cf1dd3.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598765-7e01f300-d812-11eb-9e3c-c49cb75362b7.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598884-a12ca280-d812-11eb-8cae-f4d39dfdbc0f.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123598939-ad186480-d812-11eb-9428-6e314cc3e7f7.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123599005-b9042680-d812-11eb-922b-883baac59bc1.png)
+
+  Unused output optimization in sequential circuits:
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123599147-ebae1f00-d812-11eb-9395-d2aca5420d1f.png)
+  
+  ![image](https://user-images.githubusercontent.com/69497292/123599297-1304ec00-d813-11eb-80f2-db1b95e5b357.png)
+
+  ![image](https://user-images.githubusercontent.com/69497292/123599432-36c83200-d813-11eb-9d3e-8ca1293c9519.png)
+
+  ## DAY 4
+  
+  * Gate level simulation :
+  
+  Here the generated netlist is tested by simulating. Some times the generated netlist does not match the functionality, So Gate level simulation plays an important role in vlsi design flow.
+  
+  Why GLS: 
+  
+  * To verify  the functionality after synthesis
+  * To check if the timing of design is met
+  
+   netlist (.v) file + tb + gate_level_verilog_model <<< iverilog <<< vcd file which is further observed
+  
+  RTL file will not be having details in terms of standard cell so earlier thier was no need of gate_level_verilog_model to verify but now we are verifying the netlist which has the code in terms of standard cells. So now we had to add a referance file , so that iverilog gets the  referance file for these standard cells.
+  
+  (((HERE IN THIS WORKSHOP WE HAVEN'T CONSIDERED TIMING AWARE MODELS)))
+  
+  * Synthesis simulation mismatch:
+  
+  
+  
+  
+  
+  * 
+
   
 
+  
+  
+  
 
-
-
-
-
-
-
+  
+  
+  
+  
