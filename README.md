@@ -566,7 +566,41 @@ Some Special cases:
  For : 
  * Is used inside always block.
  * Used to evaluate expression.
- * Finally using "for" inside always block will also lead to hardware. 
+ * Using "for" inside always block will also lead to hardware. But its not hardware oriented code .
+ 
+ Generate:
+ * It is used outside always.
+ * It instantates the hardware multiple times.
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123652249-bffa5b80-d849-11eb-87bf-8537503f1e01.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652306-d1436800-d849-11eb-9cbe-a0f604dc5990.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652370-dd2f2a00-d849-11eb-95fd-92ae5cde1e5d.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652439-ec15dc80-d849-11eb-8cf0-b5b953889d86.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652479-f506ae00-d849-11eb-8b98-8dd6c52c7d12.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652564-08197e00-d84a-11eb-93eb-3e528865f2db.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652680-21bac580-d84a-11eb-9a99-9e11cb17129b.png)
+ 
+ ![image](https://user-images.githubusercontent.com/69497292/123652847-4747cf00-d84a-11eb-8f80-633e5713e83b.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652773-3a2ae000-d84a-11eb-98d9-dc36c43d76d6.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123652983-63e40700-d84a-11eb-8fbf-fe68b6876e42.png)
+
+![image](https://user-images.githubusercontent.com/69497292/123653153-883fe380-d84a-11eb-941b-75626e01e322.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123653019-6d6d6f00-d84a-11eb-9f9c-b87230bb5e78.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123653247-9988f000-d84a-11eb-86ca-5f0e3b88e84b.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123653313-a7d70c00-d84a-11eb-8167-34a56abf5069.png)
+
+ ![image](https://user-images.githubusercontent.com/69497292/123653366-b1f90a80-d84a-11eb-8028-971f4bfd361b.png)
 
 
  
